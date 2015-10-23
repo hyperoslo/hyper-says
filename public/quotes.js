@@ -18,5 +18,9 @@ var quotes = [
   {
     quote: "How about NO!",
     author: "Peter"
+  },
+  {
+    quote: "This is why I @hyperoslo",
+    author: "Johannes"
   }
 ];
