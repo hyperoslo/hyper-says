@@ -45,6 +45,7 @@ footer {
   display: inline-block;
   position: relative;
   top: -5px;
+  margin-top: 10px
 }
 
 .logo {
