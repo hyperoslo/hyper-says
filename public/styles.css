@@ -13,6 +13,7 @@ body {
   position: relative;
   height: 100%;
   position: relative;
+  cursor: pointer;
 }
 
 a {
@@ -29,6 +30,10 @@ blockquote {
   padding: 0;
   transform: translate(-50%, -50%);
   text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .quote {
