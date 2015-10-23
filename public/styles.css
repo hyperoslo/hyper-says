@@ -42,7 +42,7 @@ blockquote {
 }
 
 footer {
-  display: inline;
+  display: inline-block;
   position: relative;
   top: -5px;
 }
