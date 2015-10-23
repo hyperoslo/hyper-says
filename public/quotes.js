@@ -14,5 +14,9 @@ var quotes = [
   {
     quote: "The toilet is on fire!",
     author: "Knut"
+  },
+  {
+    quote: "How about NO!",
+    author: "Peter"
   }
-]
+];
