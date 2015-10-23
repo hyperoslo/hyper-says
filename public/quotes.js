@@ -1,9 +1,5 @@
 var quotes = [
   {
-    quote: "This is why I @hyperoslo",
-    author: "Johannes"
-  },
-  {
     quote: "You have to understand what you are doing!",
     author: "Felipe"
   },
