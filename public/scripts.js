@@ -15,6 +15,10 @@ $(document).ready(function() {
     $(".author").text(randomQuote.author);
   }
 
+  $("body").on("click", function() {
+    randomizeColor();
+    randomizeQuote();
+  });
 
   randomizeColor();
   randomizeQuote();
