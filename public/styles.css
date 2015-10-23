@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700italic,700,400italic);
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: Merriweather, Georgia;
+  font-style: italic;
+  position: relative;
+  height: 100%;
+  position: relative;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+blockquote {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.quote {
+  display: inline;
+  font-size: 30pt;
+}
+
+footer {
+  display: inline;
+  position: relative;
+  top: -5px;
+}
+
+.logo {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  opacity: 0.2;
+}
+
+.logo:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  transform-origin: bottom right;
+  transition: 0.25s ease;
+  transition-property: opacity, transform;
+}
+
+.links {
+  position: absolute;
+  bottom: 20px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.links .link {
+  border-bottom: 1px solid white;
+}
