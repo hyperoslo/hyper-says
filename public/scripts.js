@@ -41,12 +41,12 @@ $(document).ready(function() {
   randomizeColor();
   randomizeQuote();
 
+  setInterval(function() {
+    randomizeColor();
+    randomizeQuote();
+  }, 30 * 1000);
+
   if(window.location.hash == "#tv") {
     $(".links").hide();
-
-    var interval = setInterval(function() {
-      randomizeColor();
-      randomizeQuote();
-    }, 30 * 1000);
   }
 });
