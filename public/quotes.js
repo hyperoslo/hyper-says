@@ -14,5 +14,9 @@ var quotes = [
   {
     quote: "The toilet is on fire!",
     author: "Knut"
+  },
+  {
+    quote: "This is why I @hyperoslo",
+    author: "Johannes"
   }
 ]
