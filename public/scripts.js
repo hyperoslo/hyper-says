@@ -25,5 +25,10 @@ $(document).ready(function() {
 
   if(window.location.hash == "#tv") {
     $(".links").hide();
+
+    var interval = setInterval(function() {
+      randomizeColor();
+      randomizeQuote();
+    }, 30 * 1000);
   }
 });

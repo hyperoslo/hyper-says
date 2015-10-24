@@ -7,7 +7,8 @@ A simple application to commemorate all the weird things we say
 
 ## TV mode
 
-Add [#tv][tv mode] to the URL to enable TV mode, which hides the links.
+Add [#tv][tv mode] to the URL to enable TV mode, which hides the links and
+rorates quotes automatically.
 
 ## Add a quote
 
