@@ -1,9 +1,15 @@
 $(document).ready(function() {
   var currentQuote = null;
+  var currentColor = null;
 
   var randomizeColor = function() {
     var colors = [180, 163, 205, 200, 168, 357, 297, 187, 319];
-    var randomColor = colors[Math.floor(Math.random()*colors.length)];
+
+    do {
+      var randomColor = colors[Math.floor(Math.random()*colors.length)];
+    } while (currentColor && randomColor == currentColor);
+
+    currentColor = randomColor;
 
     $("body").css({
       background: 'hsl(' + randomColor + ', 50%, 55%)'
