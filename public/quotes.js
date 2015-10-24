@@ -32,7 +32,7 @@ var quotes = [
     author: "Rolf"
   },
   {
-    quote: "Børk! Børk! Børk!"
+    quote: "Børk! Børk! Børk!",
     author: "Chris"
   }
 ]
