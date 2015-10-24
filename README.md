@@ -12,7 +12,7 @@ rotates quotes automatically.
 
 ## Add a quote
 
-1. Edit the [quote file][quote file]*.
+1. Just edit the [quote file][quote file]*!
 
 \* If you don't have an account on GitHub, make one and ask someone for
    access to our organization.
