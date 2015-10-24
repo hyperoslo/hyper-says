@@ -11,8 +11,8 @@ Add [#tv][tv mode] to the URL to enable TV mode, which hides the links.
 
 1. Edit the [quote file][quote file]*.
 
-* If you don't have an account on GitHub, make one and ask someone for
-  access to our organization.
+\* If you don't have an account on GitHub, make one and ask someone for
+   access to our organization.
 
 [hyper]: http://hyper.no
 [quote file]: https://github.com/hyperoslo/hyper-says/edit/master/public/quotes.js
