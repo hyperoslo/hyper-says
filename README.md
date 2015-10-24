@@ -18,7 +18,7 @@ Add [#tv][tv mode] to the URL to enable TV mode, which hides the links.
 
 ## Development
 
-Install dependencies:
+Install the dependencies:
 
 `$ npm install --save-dev`
 
