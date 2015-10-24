@@ -44,7 +44,7 @@ $(document).ready(function() {
   setInterval(function() {
     randomizeColor();
     randomizeQuote();
-  }, 30 * 1000);
+  }, 10 * 1000);
 
   if(window.location.hash == "#tv") {
     $(".links").hide();
