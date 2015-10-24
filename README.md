@@ -11,7 +11,9 @@ Add [#tv][tv mode] to the URL to enable TV mode, which hides the links.
 
 ## Add a quote
 
-1. Just edit the [quote file][quote file]*!
+1. Edit the [quote file][quote file]*!
+2. ???
+3. Profit!
 
 \* If you don't have an account on GitHub, make one and ask someone for
    access to our organization.
