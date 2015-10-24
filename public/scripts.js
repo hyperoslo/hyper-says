@@ -22,4 +22,8 @@ $(document).ready(function() {
 
   randomizeColor();
   randomizeQuote();
+
+  if(window.location.hash == "#tv") {
+    $(".links").hide();
+  }
 });
