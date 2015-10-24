@@ -26,6 +26,10 @@ Run the server:
 
 `$ gulp serve`
 
+Deploy the changes:
+
+`$ divshot push && divshot promote staging production`
+
 [hyper]: http://hyper.no
 [quote file]: https://github.com/hyperoslo/hyper-says/edit/master/public/quotes.js
 [tv mode]: http://hypersays.com/#TV
