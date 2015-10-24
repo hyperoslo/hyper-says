@@ -16,6 +16,16 @@ Add [#tv][tv mode] to the URL to enable TV mode, which hides the links.
 \* If you don't have an account on GitHub, make one and ask someone for
    access to our organization.
 
+## Development
+
+Install dependencies:
+
+`$ npm install --save-dev`
+
+Run the server:
+
+`$ gulp serve`
+
 [hyper]: http://hyper.no
 [quote file]: https://github.com/hyperoslo/hyper-says/edit/master/public/quotes.js
 [tv mode]: http://hypersays.com/#TV
