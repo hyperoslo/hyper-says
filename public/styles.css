@@ -17,8 +17,12 @@ body {
   font-style: italic;
   position: relative;
   height: 100%;
+}
+
+.repository {
+  animation: pop 0.25s ease-in-out alternate;
+  height: 100%;
   position: relative;
-  animation: pop 0.25s ease-in-out;
 }
 
 a {
