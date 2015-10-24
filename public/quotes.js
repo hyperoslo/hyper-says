@@ -34,5 +34,5 @@ var quotes = [
   {
     quote: "Børk! Børk! Børk!",
     author: "Chris"
-  }
+  },
 ]
