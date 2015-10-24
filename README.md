@@ -2,7 +2,7 @@
 
 ![Screenshot](https://raw.githubusercontent.com/hyperoslo/hyper-says/master/screenshot.jpg)
 
-A simple application to commemorate all the weird things we say at
+A simple application to commemorate all the weird things we say
 [@hyperoslo][hyper].
 
 ## TV mode
