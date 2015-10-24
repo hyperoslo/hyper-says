@@ -17,6 +17,7 @@ body {
   font-style: italic;
   position: relative;
   height: 100%;
+  transition: background-color 0.5s;
 }
 
 .repository {
