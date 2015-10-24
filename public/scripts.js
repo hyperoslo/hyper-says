@@ -17,8 +17,14 @@ $(document).ready(function() {
 
     currentQuote = randomQuote;
 
-    $(".quote").text(randomQuote.quote);
-    $(".author").text(randomQuote.author);
+    $("blockquote").addClass("flipOutX");
+
+    setTimeout(function() {
+      $(".quote").text(randomQuote.quote);
+      $(".author").text("– " + randomQuote.author);
+      $("blockquote").removeClass("flipOutX");
+      $("blockquote").addClass("flipInX");
+    }, 1000);
   }
 
   $("body, blockquote").on("click", function() {
