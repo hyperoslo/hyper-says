@@ -20,7 +20,7 @@ var quotes = [
     author: "Johannes"
   },
   {
-    quote: "The Devil is in the details.",
+    quote: "The devil is in the details",
     author: "Marte"
   },
   {
