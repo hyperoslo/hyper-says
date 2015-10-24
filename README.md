@@ -1,5 +1,7 @@
 # Hyper Says
 
+![Screenshot](https://raw.githubusercontent.com/hyperoslo/hyper-says/master/screenshot.jpg)
+
 A simple application to commemorate all the weird things we say at
 [@hyperoslo][hyper].
 
