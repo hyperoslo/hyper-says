@@ -5,11 +5,11 @@ A simple application to commemorate all the weird things we say at
 
 ## TV mode
 
-Add "[#tv][tv mode]" to the URL to enable TV mode, which hides the links.
+Add [#tv][tv mode] to the URL to enable TV mode, which hides the links.
 
 ## Add a quote
 
-1. Edit the [quote file][quotes file]*.
+1. Edit the [quote file][quote file]*.
 
 * If you don't have an account on GitHub, make one and ask someone for
   access to our organization.
