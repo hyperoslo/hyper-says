@@ -22,5 +22,17 @@ var quotes = [
   {
     quote: "The Devil is in the details.",
     author: "Marte"
+  },
+  {
+    quote: "Dude!",
+    author: "Rrramon"
+  },
+  {
+    quote: "Keep calm and carry on",
+    author: "Rolf"
+  },
+  {
+    quote: "Børk! Børk! Børk!"
+    author: "Chris"
   }
 ]
