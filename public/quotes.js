@@ -43,4 +43,8 @@ var quotes = [
     quote: "That's the thing!",
     author: "Rrramon"
   },
+  {
+    quote: "You'll get used to it!",
+    author: "Mathias"
+  },
 ]
