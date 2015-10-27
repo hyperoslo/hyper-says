@@ -32,6 +32,10 @@ var quotes = [
     author: "Rolf"
   },
   {
+    quote: "I have a meeting",
+    author: "Rolf"
+  },
+  {
     quote: "Børk! Børk! Børk!",
     author: "Chris"
   },
