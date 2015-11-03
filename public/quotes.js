@@ -51,4 +51,8 @@ var quotes = [
     quote: "Where should we place Russia?",
     author: "Mads"
   },
+  {
+    quote: "Johannes did a fantastic",
+    author: "Einar"
+  },
 ]
