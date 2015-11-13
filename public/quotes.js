@@ -63,4 +63,8 @@ var quotes = [
     quote: "Only alcohol is not enough.",
     author: "Ragnhild"
   },
+  {
+    quote: "We don't tweak pixels anymore, we twerk them",
+    author: "Thuy"
+  },
 ]
