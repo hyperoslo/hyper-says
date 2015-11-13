@@ -67,4 +67,8 @@ var quotes = [
     quote: "We don't tweak pixels anymore, we twerk them",
     author: "Thuy"
   },
+  {
+    quote: "I just want to be in the list of contributors",
+    author: "Vadym"
+  }
 ]
