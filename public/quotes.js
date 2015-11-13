@@ -55,4 +55,8 @@ var quotes = [
     quote: "Johannes did a fantastic",
     author: "Einar"
   },
+  {
+    quote: "Only alcohol is not enough.",
+    author: "Ragnhild"
+  },
 ]
