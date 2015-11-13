@@ -59,4 +59,8 @@ var quotes = [
     quote: "The only constant is change",
     author: "Øistein"
   },
+  {
+    quote: "Only alcohol is not enough.",
+    author: "Ragnhild"
+  },
 ]
