@@ -23,6 +23,7 @@ body {
 .repository {
   height: 100%;
   position: relative;
+  cursor: pointer;
 }
 
 a {
@@ -42,6 +43,10 @@ a {
 
 blockquote {
   text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .quote {
@@ -50,9 +55,10 @@ blockquote {
 }
 
 footer {
-  display: inline;
+  display: inline-block;
   position: relative;
   top: -5px;
+  margin-top: 10px
 }
 
 .links {
