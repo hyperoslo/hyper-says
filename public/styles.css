@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700italic,700,400italic);
 
+@keyframes pop {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
 html {
   height: 100%;
 }
@@ -12,6 +17,11 @@ body {
   font-style: italic;
   position: relative;
   height: 100%;
+  transition: background-color 0.5s;
+}
+
+.repository {
+  height: 100%;
   position: relative;
   cursor: pointer;
 }
@@ -21,14 +31,17 @@ a {
   text-decoration: none;
 }
 
-blockquote {
+.centered {
   position: absolute;
   top: 40%;
   left: 50%;
-  width: 50%;
+  width: 80%;
   margin: 0;
   padding: 0;
   transform: translate(-50%, -50%);
+}
+
+blockquote {
   text-align: center;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -48,23 +61,10 @@ footer {
   margin-top: 10px
 }
 
-.logo {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 50px;
-  opacity: 0.2;
-}
-
-.logo:hover {
-  opacity: 1;
-  transform: scale(1.2);
-  transform-origin: bottom right;
-  transition: 0.25s ease;
-  transition-property: opacity, transform;
-}
-
 .links {
+  opacity: 0;
+  animation: pop 0.5s 2s ease-in-out;
+  animation-fill-mode: forwards;
   position: absolute;
   bottom: 20px;
   margin: 0 auto;

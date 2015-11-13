@@ -1,0 +1,11 @@
+{
+  "name": "hyper-says",
+  "version": "1.0.0",
+  "description": "A simple application to commemorate all the weird things we say @hyperoslo",
+  "author": "Johannes Gorset <jgorset@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9",
+    "gulp-serve": "^1.2"
+  }
+}

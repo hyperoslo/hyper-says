@@ -3,9 +3,10 @@
 <html>
   <head>
     <title>Hyper Says</title>
+    <link rel="stylesheet" type="text/css" href="animate.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="quotes.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/hyperoslo/hyper-says/master/public/quotes.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
 
     <meta property="og:title" content="Hyper Says" />
@@ -18,17 +19,18 @@
   </head>
 
   <body>
-    <blockquote>
-      <p class="quote">
-      </p>
-      <footer>
-        — <span class="author"></span>
-      </footer>
-    </blockquote>
+    <div class="repository">
+      <div class="centered">
+        <blockquote class="animated flipInX">
+          <p class="quote"></p>
+          <footer class="author"></footer>
+        </blockquote>
+      </div>
 
-    <nav class="links">
-      <a class="link" href="https://github.com/hyperoslo/shit-hyper-says/blob/master/public/quotes.js">Submit a quote</a> or
-      <a class="link" href="http://hyper.no/jobs">work with us</a>
-    </nav>
+      <nav class="links">
+        <a class="link" href="https://github.com/hyperoslo/hyper-says#add-a-quote">Submit a quote</a> or
+        <a class="link" href="http://hyper.no/jobs">work with us</a>
+      </nav>
+    </div>
   </body>
 </html>

@@ -1,7 +1,15 @@
 $(document).ready(function() {
+  var currentQuote = null;
+  var currentColor = null;
+
   var randomizeColor = function() {
     var colors = [180, 163, 205, 200, 168, 357, 297, 187, 319];
-    var randomColor = colors[Math.floor(Math.random()*colors.length)];
+
+    do {
+      var randomColor = colors[Math.floor(Math.random()*colors.length)];
+    } while (currentColor && randomColor == currentColor);
+
+    currentColor = randomColor;
 
     $("body").css({
       background: 'hsl(' + randomColor + ', 50%, 55%)'
@@ -9,10 +17,20 @@ $(document).ready(function() {
   }
 
   var randomizeQuote = function() {
-    var randomQuote = quotes[Math.floor(Math.random()*quotes.length)];
+    do {
+      var randomQuote = quotes[Math.floor(Math.random()*quotes.length)];
+    } while (currentQuote && randomQuote.quote == currentQuote.quote);
 
-    $(".quote").text(randomQuote.quote);
-    $(".author").text(randomQuote.author);
+    currentQuote = randomQuote;
+
+    $("blockquote").addClass("flipOutX");
+
+    setTimeout(function() {
+      $(".quote").text(randomQuote.quote);
+      $(".author").text("– " + randomQuote.author);
+      $("blockquote").removeClass("flipOutX");
+      $("blockquote").addClass("flipInX");
+    }, 1000);
   }
 
   $("body, blockquote").on("click", function() {
@@ -22,4 +40,13 @@ $(document).ready(function() {
 
   randomizeColor();
   randomizeQuote();
+
+  setInterval(function() {
+    randomizeColor();
+    randomizeQuote();
+  }, 10 * 1000);
+
+  if(window.location.hash == "#tv") {
+    $(".links").hide();
+  }
 });
