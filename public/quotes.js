@@ -8,7 +8,7 @@ var quotes = [
     author: "Felipe"
   },
   {
-    quote: "I think no one knows that it doesn't work, but I can't sleep.",
+    quote: "I think no one knows that it doesn't work, but I can't sleep",
     author: "Vadym"
   },
   {
@@ -16,16 +16,8 @@ var quotes = [
     author: "Knut"
   },
   {
-    quote: "How about NO!",
-    author: "Peter"
-  },
-  {
-    quote: "This is why I @hyperoslo.",
+    quote: "This is why I @hyperoslo",
     author: "Johannes"
-  },
-  {
-    quote: "I'm on the fence.",
-    author: "Tim"
   },
   {
     quote: "The devil is in the details",
@@ -64,7 +56,7 @@ var quotes = [
     author: "Einar"
   },
   {
-    quote: "Only alcohol is not enough.",
-    author: "Ragnhild"
+    quote: "The only constant is change",
+    author: "Øistein"
   },
 ]
