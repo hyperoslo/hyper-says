@@ -71,6 +71,8 @@ var quotes = [
     quote: "I just want to be in the list of contributors",
     author: "Vadym"
   },
+  {
     quote: "There is one weird thing, I didn’t want to tell you.",
     author: "Vadym"
+  }
 ]
