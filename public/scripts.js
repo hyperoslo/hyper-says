@@ -57,7 +57,7 @@ $(document).ready(function() {
   randomizeColor();
   randomizeQuote();
 
-  if(window.location.hash == "#tv") {
+  if(window.location.hash.toLowerCase() == "#tv") {
     $(".links").hide();
   }
 });
