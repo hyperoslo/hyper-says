@@ -33,21 +33,29 @@ $(document).ready(function() {
     }, 1000);
   }
 
+  var startInterval = function() {
+    return setInterval(function() {
+      randomizeColor();
+      randomizeQuote();
+    }, 10 * 1000);
+  };
+
+  var interval = startInterval();
+
   $("body, blockquote").on("click", function() {
+    clearInterval(interval);
+
     // Prevent switching quote and color if event is triggered by text selection
     if (getSelection().toString()) return;
 
     randomizeColor();
     randomizeQuote();
+
+    interval = startInterval();
   });
 
   randomizeColor();
   randomizeQuote();
-
-  setInterval(function() {
-    randomizeColor();
-    randomizeQuote();
-  }, 10 * 1000);
 
   if(window.location.hash == "#tv") {
     $(".links").hide();
