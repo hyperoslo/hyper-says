@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
   randomizeColor();
   randomizeQuote();
 
-  if (window.location.hash == "#tv") {
+  if(window.location.hash.toLowerCase() == "#tv") {
     document.querySelector(".links").style.display = 'none';
   }
 });
