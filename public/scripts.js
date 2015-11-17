@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector('blockquote').addEventListener("click", clickListener);
 
   randomizeColor();
-  randomizeQuote();
+  
+  setTimeout(function() { randomizeQuote() }, 1000 * 3);
 
   if(window.location.hash.toLowerCase() == "#tv") {
     document.querySelector(".links").style.display = 'none';
