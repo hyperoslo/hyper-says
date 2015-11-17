@@ -58,14 +58,14 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   function preventTextSelection(element) {
-    var bodyAttributes = new Array();
-    bodyAttributes["style"] = "-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;";
-    bodyAttributes["unselectable"] = "on";
-    bodyAttributes["onselectstart"] = "return false;";
-    bodyAttributes["onmousedown"] = "return false;";
+    var attributes = new Array();
+    attributes["style"] = "-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;";
+    attributes["unselectable"] = "on";
+    attributes["onselectstart"] = "return false;";
+    attributes["onmousedown"] = "return false;";
     
-    for (key in bodyAttributes) {
-      element.setAttribute(key, bodyAttributes[key])
+    for (attribute in attributes) {
+      element.setAttribute(attribute, attributes[attribute])
     }
   }
 
