@@ -50,11 +50,11 @@ blockquote {
   font-size: 30pt;
 }
 
-.quote:before {
+.quote.notation:before {
   content: "“"
 }
 
-.quote:after {
+.quote.notation:after {
   content: "”"
 }
 
