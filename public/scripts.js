@@ -37,14 +37,12 @@ $(document).ready(function() {
     return setInterval(function() {
       randomizeColor();
       randomizeQuote();
-      console.log('Switching from interval.');
     }, 10 * 1000);
   };
 
   var interval = startInterval();
 
   $("body, blockquote").on("click", function() {
-    console.log('Clearing interval', interval);
     clearInterval(interval);
 
     randomizeColor();
