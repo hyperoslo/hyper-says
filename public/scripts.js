@@ -57,7 +57,21 @@ document.addEventListener('DOMContentLoaded', function() {
     interval = startInterval();
   };
 
-  document.querySelector('body').addEventListener("click", clickListener);
+  function preventTextSelection(element) {
+    var attributes = new Array();
+    attributes["style"] = "-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;";
+    attributes["unselectable"] = "on";
+    attributes["onselectstart"] = "return false;";
+    attributes["onmousedown"] = "return false;";
+    
+    for (attribute in attributes) {
+      element.setAttribute(attribute, attributes[attribute])
+    }
+  }
+
+  var bodyElement = document.querySelector('body')
+  preventTextSelection(bodyElement)
+  bodyElement.addEventListener("click", clickListener);
   document.querySelector('blockquote').addEventListener("click", clickListener);
 
   randomizeColor();
