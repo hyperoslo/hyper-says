@@ -34,6 +34,9 @@ $(document).ready(function() {
   }
 
   $("body, blockquote").on("click", function() {
+    // Prevent switching quote and color if event is triggered by text selection
+    if (getSelection().toString()) return;
+
     randomizeColor();
     randomizeQuote();
   });
