@@ -74,5 +74,9 @@ var quotes = [
   {
     quote: "There is one weird thing, I didn’t want to tell you.",
     author: "Vadym"
+  },
+  {
+    quote: "It gives me great pleasure and enthusiasm to apply for a suitable post in your esteemed organization.",
+    author: "Every job applicant for the tech team ever"
   }
 ]
