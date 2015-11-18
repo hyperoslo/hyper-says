@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
       blockquote.classList.add("flipInX");
       
       var quoteClass = quote.getAttribute("class")
-      if (quoteClass.indexOf("notation") == -1) {
+      if (quoteClass.indexOf("notation") === -1) {
         quote.setAttribute("class", quoteClass + " notation")
       }
     }, 1000);
