@@ -34,10 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
       blockquote.classList.remove("flipOutX");
       blockquote.classList.add("flipInX");
       
-      var quoteClass = quote.getAttribute("class")
-      if (quoteClass.indexOf("notation") === -1) {
-        quote.setAttribute("class", quoteClass + " notation")
-      }
+      quote.classList.add("notation");
     }, 1000);
   }
 
