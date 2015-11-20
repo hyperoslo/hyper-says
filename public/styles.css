@@ -50,6 +50,14 @@ blockquote {
   font-size: 30pt;
 }
 
+.quote.notation:before {
+  content: "“"
+}
+
+.quote.notation:after {
+  content: "”"
+}
+
 footer {
   display: inline-block;
   position: relative;

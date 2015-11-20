@@ -33,6 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
       author.innerText = "– " + randomQuote.author;
       blockquote.classList.remove("flipOutX");
       blockquote.classList.add("flipInX");
+      
+      var quoteClass = quote.getAttribute("class")
+      if (quoteClass.indexOf("notation") === -1) {
+        quote.setAttribute("class", quoteClass + " notation")
+      }
     }, 1000);
   }
 
@@ -61,7 +66,8 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelector('blockquote').addEventListener("click", clickListener);
 
   randomizeColor();
-  randomizeQuote();
+  
+  setTimeout(function() { randomizeQuote() }, 1000 * 3);
 
   if(window.location.hash.toLowerCase() == "#tv") {
     document.querySelector(".links").style.display = 'none';
