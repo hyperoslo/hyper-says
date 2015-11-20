@@ -10,7 +10,7 @@ var quotes = [
   {
     quote: "Sometimes, I do create bugs!",
     author: "Felipe"
-  }
+  },
   {
     quote: "I think no one knows that it doesn't work, but I can't sleep",
     author: "Vadym"
