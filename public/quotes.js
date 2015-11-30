@@ -82,5 +82,9 @@ var quotes = [
   {
     quote: "It gives me great pleasure and enthusiasm to apply for a suitable post in your esteemed organization.",
     author: "Every job applicant for the tech team ever"
+  },
+  {
+    quote: "Stop quoting me for everything",
+    author: "Felipe"
   }
 ]
