@@ -86,5 +86,9 @@ var quotes = [
   {
     quote: "Stop quoting me for everything",
     author: "Felipe"
+  },
+  {
+    quote: "UDI should stand for Unnecessarily Dickish Institute",
+    author: "Steve"
   }
 ]
