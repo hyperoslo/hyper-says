@@ -90,5 +90,9 @@ var quotes = [
   {
     quote: "Please update your profile picture or face",
     author: "Mathias"
+  },
+  {
+    quote: "I owe you a teabag, Tim.",
+    author: "Johannes"
   }
 ]
