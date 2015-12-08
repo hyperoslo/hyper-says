@@ -94,5 +94,9 @@ var quotes = [
   {
     quote: "I owe you a teabag, Tim.",
     author: "Johannes"
+  },
+  {
+    quote: "I'm not Vadym, I'm Ramon",
+    author: "Vadym"
   }
 ]
