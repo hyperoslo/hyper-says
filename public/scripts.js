@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
   var querySelector = document.querySelector.bind(document);
 
   function random(min, max) {
@@ -32,24 +32,24 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function setBackground(color) {
-    document.body.style.background = "hsl(" + color + ", 50%, 55%)";
+    document.body.style.background = 'hsl(' + color + ', 50%, 55%)';
   }
 
   function setQuote(quote) {
-    var author = querySelector(".author");
-    var blockquote = querySelector("blockquote");
-    var content = querySelector(".quote");
+    var author = querySelector('.author');
+    var blockquote = querySelector('blockquote');
+    var content = querySelector('.quote');
 
-    blockquote.classList.add("flipOutX");
+    blockquote.classList.add('flipOutX');
 
     setTimeout(function() {
-      author.textContent = "— " + quote.author;
+      author.textContent = '— ' + quote.author;
 
-      blockquote.classList.remove("flipOutX");
-      blockquote.classList.add("flipInX");
+      blockquote.classList.remove('flipOutX');
+      blockquote.classList.add('flipInX');
 
       content.textContent = quote.quote;
-      content.classList.add("notation");
+      content.classList.add('notation');
     }, 1000);
   }
 
@@ -79,10 +79,10 @@ document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {
     startInterval();
 
-    document.body.addEventListener("click", startInterval);
+    document.body.addEventListener('click', startInterval);
   }, 3000);
 
-  if (window.location.hash.toLowerCase() === "#tv") {
-    querySelector(".links").style.display = "none";
+  if (window.location.hash.toLowerCase() === '#tv') {
+    querySelector('.links').style.display = 'none';
   }
 });
