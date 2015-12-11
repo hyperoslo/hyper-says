@@ -98,5 +98,9 @@ var quotes = [
   {
     quote: "I'm not Vadym, I'm Ramon",
     author: "Vadym"
+  },
+  {
+    quote: "I don’t remember exactly every line of code and logic in the whole project",
+    author: "Felipe"
   }
 ]
