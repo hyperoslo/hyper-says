@@ -103,4 +103,8 @@ var quotes = [
     quote: "I don’t remember exactly every line of code and logic in the whole project",
     author: "Felipe"
   }
+  {
+    quote: "It's like having the power of the sun in your pants",
+    author: "Jonas"
+  }
 ]
