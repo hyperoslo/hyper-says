@@ -106,5 +106,5 @@ var quotes = [
   {
     quote: "It's like having the power of the sun in your pants",
     author: "Jonas"
-  }
+  },
 ]
