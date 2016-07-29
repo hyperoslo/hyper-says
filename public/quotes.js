@@ -107,4 +107,8 @@ var quotes = [
     quote: "It's like having the power of the sun in your pants",
     author: "Jonas"
   },
+  {
+    quote: "I've had stiff for 4 days after that day.",
+    author: "Ramon"
+  },
 ]
