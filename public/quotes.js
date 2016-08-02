@@ -111,4 +111,8 @@ var quotes = [
     quote: "I've had stiff for 4 days after that day.",
     author: "Ramon"
   },
+  {
+    quote: "I like killing things.",
+    author: "Ramon"
+  },
 ]
