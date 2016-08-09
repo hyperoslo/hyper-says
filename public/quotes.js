@@ -119,4 +119,8 @@ var quotes = [
     quote: "I'm the girl.",
     author: "Ramon"
   },
+  {
+    quote: "How do I access hyperspace?",
+    author: "Jean"
+  }
 ]
