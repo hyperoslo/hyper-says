@@ -122,5 +122,13 @@ var quotes = [
   {
     quote: "How do I access hyperspace?",
     author: "Jean"
+  },
+  {
+    quote: "I like databases",
+    author: "Francesco"
+  },
+  {
+    quote: "I don't hate MongoDB",
+    author: "Francesco"
   }
 ]
