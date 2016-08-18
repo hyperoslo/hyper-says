@@ -131,4 +131,8 @@ var quotes = [
     quote: "I don't hate MongoDB",
     author: "Francesco"
   }
+  {
+    quote: "When I pay $16 I fucking expect quality!",
+    author: "Bonden"
+  }
 ]
