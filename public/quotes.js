@@ -134,5 +134,9 @@ var quotes = [
   {
     quote: "When I pay $16 I fucking expect quality!",
     author: "Bonden"
+  },
+  {
+    quote: "Don't get too excited!",
+    author: "Johannes"
   }
 ]
