@@ -56,12 +56,21 @@ document.addEventListener('DOMContentLoaded', function() {
   var quotes = shuffle(window.quotes);
   var colors = shuffle([180, 163, 205, 200, 168, 357, 297, 187, 319]);
 
-  function changeQuote() {
+  // Change to the given quote.
+  //
+  // index - An Integer describing the index of a particular quote, or falsy
+  //         for a random quote.
+  function changeQuote(index) {
     // Prevent switching quote and color if event is triggered by text selection
     if (getSelection().toString()) return;
 
     rotate(colors, setBackground);
-    rotate(quotes, setQuote);
+
+    if (index) {
+      setQuote(window.quotes[index]);
+    } else {
+      rotate(quotes, setQuote);
+    }
   }
 
   var interval = null;
@@ -74,13 +83,18 @@ document.addEventListener('DOMContentLoaded', function() {
     interval = setInterval(changeQuote, 10000);
   };
 
-  rotate(colors, setBackground);
+  if (window.location.hash.startsWith('#q=')) {
+    var index = window.location.hash.match(/#q=([0-9]+)/)[1];
+    changeQuote(index);
+  } else {
+    rotate(colors, setBackground);
 
-  setTimeout(function() {
-    startInterval();
+    setTimeout(function() {
+      startInterval();
 
-    document.body.addEventListener('click', startInterval);
-  }, 3000);
+      document.body.addEventListener('click', startInterval);
+    }, 3000);
+  }
 
   if (window.location.hash.toLowerCase() === '#tv') {
     querySelector('.links').style.display = 'none';
