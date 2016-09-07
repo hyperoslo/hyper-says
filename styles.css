@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700italic,700,400italic);
+
+@keyframes pop {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: Merriweather, Georgia;
+  font-style: italic;
+  position: relative;
+  height: 100%;
+  transition: background-color 0.5s;
+}
+
+.repository {
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%, -50%);
+}
+
+blockquote {
+  text-align: center;
+}
+
+.quote {
+  display: inline;
+  font-size: 30pt;
+}
+
+.quote.notation:before {
+  content: "“"
+}
+
+.quote.notation:after {
+  content: "”"
+}
+
+footer {
+  display: inline-block;
+  position: relative;
+  top: -5px;
+  margin-top: 10px
+}
+
+.links {
+  opacity: 0;
+  animation: pop 0.5s 2s ease-in-out;
+  animation-fill-mode: forwards;
+  position: absolute;
+  bottom: 20px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.links .link {
+  border-bottom: 1px solid white;
+}
