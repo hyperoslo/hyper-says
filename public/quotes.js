@@ -138,5 +138,9 @@ var quotes = [
   {
     quote: "Don't get too excited!",
     author: "Johannes"
+  },
+  {
+    quote: "Fuck it, just put it on S3 and enjoy your life",
+    author: "Peter"
   }
 ]
