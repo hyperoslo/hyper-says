@@ -152,7 +152,7 @@ var quotes = [
     author: "Johannes"
   },
   {
-    quote: "We have developers who kind of develop",
+    quote: "Developers know more or less how to develop stuff",
     author: "Andreas"
   }
 ]
