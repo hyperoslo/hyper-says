@@ -158,5 +158,9 @@ var quotes = [
   {
     quote: "...(typing)...",
     author: "Andreas"
+  },
+  {
+    quote: "Because we're here to make something, not install plugins",
+    author: "Vadym"
   }
 ]
