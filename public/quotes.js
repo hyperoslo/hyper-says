@@ -144,7 +144,7 @@ var quotes = [
     author: "Peter"
   },
   {
-    quote: "Objective-c is like writing code in all caps and with a comic sans font",
+    quote: "Objective-C is like writing code in all caps and with a comic sans font",
     author: "Christoffer"
   },
   {
@@ -162,5 +162,9 @@ var quotes = [
   {
     quote: "Because we're here to make something, not install plugins",
     author: "Vadym"
+  },
+  {
+    quote: "How does this even work?",
+    author: "Christoffer"
   }
 ]
