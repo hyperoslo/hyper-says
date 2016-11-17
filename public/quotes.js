@@ -166,5 +166,13 @@ var quotes = [
   {
     quote: "How does this even work?",
     author: "Christoffer"
-  }
+  },
+  {
+    quote: "I'm in a meeting",
+    author: "Christoffer"
+  },
+  {
+    quote: "I moved the meeting",
+    author: "Johannes"
+  },
 ]
