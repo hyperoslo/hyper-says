@@ -171,4 +171,8 @@ var quotes = [
     quote: "I'm in a meeting",
     author: "Christoffer"
   },
+  {
+    quote: "I moved the meeting",
+    author: "Johannes"
+  },
 ]
