@@ -179,4 +179,8 @@ var quotes = [
     quote: "I don't really like to party",
     author: "Johannes"
   },
+    {
+    quote: "Fuckings box!",
+    author: "Markus"
+  },
 ]
