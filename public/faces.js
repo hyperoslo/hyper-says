@@ -1,0 +1,23 @@
+var faces = {
+  felipe:      {x: 33, y: 96, width: 25, height: 20},
+  vadym:       {x: 40, y: 86, width: 25, height: 20},
+  knut:        {x: 30, y: 96, width: 27, height: 20},
+  johannes:    {x: 26, y: 98, width: 29, height: 17},
+  marte:       {x: 85, y: 95, width: 23, height: 20},
+  rolf:        {x: 24, y: 90, width: 25, height: 22},
+  chris:       {x: 33, y: 96, width: 25, height: 20},
+  mathias:     {x: 48, y: 96, width: 19, height: 20},
+  mads:        {x: 27, y: 99, width: 25, height: 20},
+  einar:       {x: 20, y: 90, width: 26, height: 20},
+  øistein:     {x: 26, y: 85, width: 26, height: 20},
+  ragnhild:    {x: 29, y: 94, width: 26, height: 20},
+  thuy:        {x: 29, y: 98, width: 28, height: 20},
+  jonas:       {x: 49, y: 99, width: 20, height: 20},
+  jean:        {x: 31, y: 94, width: 29, height: 17},
+  francesco:   {x: 27, y: 103, width: 24, height: 20},
+  bonden:      {x: 39, y: 96, width: 24, height: 20},
+  peter:       {x: 28, y: 100, width: 29, height: 20},
+  christoffer: {x: 38, y: 97, width: 27, height: 20},
+  andreas:     {x: 28, y: 91, width: 26, height: 25},
+  markus:      {x: 35, y: 99, width: 19, height: 17}
+};
