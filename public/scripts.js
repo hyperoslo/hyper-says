@@ -67,12 +67,13 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function showTalkingHead(author, quote) {
-    canvas.style.visibility = 'visible';
-
     var img = new Image();
     var author = author.toLowerCase();
 
-    img.onload = function() { makeAuthorTalk(this, author, quote) };
+    img.onload = function() {
+      canvas.style.visibility = 'visible';
+      makeAuthorTalk(this, author, quote);
+    };
     img.src = 'images/faces/' + author.toLowerCase() + '.png';
   }
 
