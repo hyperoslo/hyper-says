@@ -19,5 +19,6 @@ var faces = {
   peter:       {x: 28, y: 100, width: 29, height: 20},
   christoffer: {x: 38, y: 97, width: 27, height: 20},
   andreas:     {x: 28, y: 91, width: 26, height: 25},
-  markus:      {x: 35, y: 99, width: 19, height: 17}
+  markus:      {x: 35, y: 99, width: 19, height: 17},
+  ramon:       {x: 38, y: 99, width: 23, height: 17}
 };
