@@ -183,4 +183,8 @@ var quotes = [
     quote: "Fuckings box!",
     author: "Markus"
   },
+  {
+    quote: "You know the golden rule - blame the backend",
+    author: "Vadym"
+  }
 ]
