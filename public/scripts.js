@@ -44,13 +44,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var blockquote = querySelector('blockquote');
     var content = querySelector('.quote');
 
+    hideTalkingHead();
+
     if (showTalkingHeads) {
-      hideTalkingHead();
       setTimeout(function() {
         showTalkingHead(quote.author, quote.quote);
       }, 1000);
-    } else {
-      hideTalkingHead();
     }
 
     blockquote.classList.add('flipOutX');
