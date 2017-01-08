@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
       canvasCtx.clearRect(0, 0, canvas.width, canvas.height);
       canvasCtx.drawImage(img, 0, 0);
-    }, Math.floor((Math.random() * 200) + 100))
+    }, Math.floor((Math.random() * 200) + 100));
   }
 
   var quotes = shuffle(window.quotes);
