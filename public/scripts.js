@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
   var querySelector = document.querySelector.bind(document);
+  var canvas = querySelector('#canvas');
+  var canvasCtx = canvas.getContext('2d');
+  var showTalkingHeads = false;
+  var canvasInterval = null;
 
   function random(min, max) {
     return min + Math.floor(Math.random() * (max - min + 1));
@@ -40,6 +44,14 @@ document.addEventListener('DOMContentLoaded', function() {
     var blockquote = querySelector('blockquote');
     var content = querySelector('.quote');
 
+    hideTalkingHead();
+
+    if (showTalkingHeads) {
+      setTimeout(function() {
+        showTalkingHead(quote.author, quote.quote);
+      }, 1000);
+    }
+
     blockquote.classList.add('flipOutX');
 
     setTimeout(function() {
@@ -51,6 +63,62 @@ document.addEventListener('DOMContentLoaded', function() {
       content.textContent = quote.quote;
       content.classList.add('notation');
     }, 1000);
+  }
+
+  function showTalkingHead(author, quote) {
+    var img = new Image();
+    var author = author.toLowerCase();
+
+    img.onload = function() {
+      canvas.style.visibility = 'visible';
+      makeAuthorTalk(this, author, quote);
+    };
+    img.src = 'images/faces/' + author.toLowerCase() + '.png';
+  }
+
+  function muteTalkingHead() {
+    clearInterval(canvasInterval);
+  }
+
+  function hideTalkingHead() {
+    muteTalkingHead();
+    canvas.style.visibility = 'hidden';
+  }
+
+  function makeAuthorTalk(img, author, quote) {
+    canvas.width = img.width;
+    canvas.height = img.height;
+    var said = false
+
+    canvasInterval = setInterval(function() {
+      authorMakeTalking(img, author);
+
+      if (!said) {
+        var synth = window.speechSynthesis;
+        var utterance = new SpeechSynthesisUtterance(quote);
+        utterance.onend = muteTalkingHead;
+        synth.speak(utterance);
+        said = true
+      }
+    }, 300);
+  }
+
+  function authorMakeTalking(img, author) {
+    canvasCtx.clearRect(0, 0, canvas.width, canvas.height);
+    canvasCtx.drawImage(img, 0, 0);
+
+    var coords = faces[author];
+    var data = canvasCtx.getImageData(
+      coords.x, coords.y, coords.width, coords.height
+    );
+
+    canvasCtx.fillRect(coords.x, coords.y, coords.width, coords.height);
+    canvasCtx.putImageData(data, coords.x, coords.y + 5);
+
+    setTimeout(function() {
+      canvasCtx.clearRect(0, 0, canvas.width, canvas.height);
+      canvasCtx.drawImage(img, 0, 0);
+    }, Math.floor((Math.random() * 200) + 100));
   }
 
   var quotes = shuffle(window.quotes);
@@ -99,4 +167,9 @@ document.addEventListener('DOMContentLoaded', function() {
   if (window.location.hash.toLowerCase() === '#tv') {
     querySelector('.links').style.display = 'none';
   }
+
+  querySelector('.sound img').addEventListener('click', function() {
+    showTalkingHeads = !showTalkingHeads;
+    this.src = showTalkingHeads ? 'images/sound.png' : 'images/mute.png';
+  });
 });

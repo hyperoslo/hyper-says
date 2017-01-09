@@ -29,7 +29,7 @@ var quotes = [
   },
   {
     quote: "Dude!",
-    author: "Rrramon"
+    author: "Ramon"
   },
   {
     quote: "Keep calm and carry on",
@@ -41,11 +41,11 @@ var quotes = [
   },
   {
     quote: "Børk! Børk! Børk!",
-    author: "Chris"
+    author: "Christoffer"
   },
   {
     quote: "That's the thing!",
-    author: "Rrramon"
+    author: "Ramon"
   },
   {
     quote: "You'll get used to it!",
