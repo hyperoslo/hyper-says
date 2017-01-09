@@ -20,6 +20,24 @@ body {
   transition: background-color 0.5s;
 }
 
+canvas {
+  display: inline;
+}
+
+.sound {
+  position: relative;
+  cursor: pointer;
+}
+
+.sound img {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+}
+
 .repository {
   height: 100%;
   position: relative;
@@ -39,6 +57,7 @@ a {
   margin: 0;
   padding: 0;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 blockquote {

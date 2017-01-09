@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="animate.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script type="text/javascript" src="https://rawgit.com/hyperoslo/hyper-says/master/public/quotes.js"></script>
+    <script type="text/javascript" src="faces.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
 
     <meta property="og:title" content="Hyper Says" />
@@ -18,12 +19,18 @@
   </head>
 
   <body>
+    <div class="sound">
+      <img src="images/mute.png"></img>
+    </div>
+
     <div class="repository">
       <div class="centered">
         <blockquote class="animated flipInX">
           <p class="quote">Hyper says</p>
           <footer class="author"></footer>
         </blockquote>
+
+        <canvas id="canvas"></canvas>
       </div>
 
       <nav class="links">
