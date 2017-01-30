@@ -186,5 +186,9 @@ var quotes = [
   {
     quote: "You know the golden rule - blame the backend",
     author: "Vadym"
+  },
+  {
+    quote: "Tests are passing on my machine.",
+    author: "Vadym"
   }
 ]
