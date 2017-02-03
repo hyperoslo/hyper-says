@@ -190,5 +190,9 @@ var quotes = [
   {
     quote: "Tests are passing on my machine.",
     author: "Vadym"
+  },
+  {
+    quote: "Vi leker ikke butikk",
+    author: "Peter"
   }
 ]
